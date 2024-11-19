@@ -1,6 +1,6 @@
 const path = require('path')
 
-const { 
+const {
   NODE_ENV = 'production',
 } = process.env
 
@@ -8,8 +8,9 @@ module.exports = {
   entry: './index.ts',
   mode: NODE_ENV,
   target: 'node',
+  devtool: 'source-map',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname),
     filename: 'index.js',
   },
   resolve: {

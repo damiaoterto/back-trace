@@ -15,7 +15,10 @@
   "author": "Francisco Damião Terto <contato@damiaoterto.dev>",
   "license": "MIT",
   "main": "dist/index.js",
+  "types": "index.d.ts",
   "scripts": {
+    "build": "webpack",
+    "gen:types": "tsc -p tsconfig.build.json -d --declarationsMap --emitDeclarationOnly",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
