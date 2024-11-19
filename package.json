@@ -1,0 +1,21 @@
+{
+  "name": "back-trace",
+  "version": "1.0.0",
+  "description": "Minimalist Node.js logging library that just works",
+  "keywords": [
+    "logging",
+    "logger",
+    "logs",
+    "nodejs",
+    "trace",
+    "debug",
+    "backtrace",
+    "monitoring"
+  ],
+  "author": "Francisco Damião Terto <contato@damiaoterto.dev>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
