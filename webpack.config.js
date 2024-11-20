@@ -6,10 +6,9 @@ const {
 } = process.env
 
 module.exports = {
-  entry: './index.ts',
+  entry: './src/index.ts',
   mode: NODE_ENV,
   target: 'node',
-  devtool: 'source-map',
   output: {
     path: path.resolve(__dirname),
     filename: 'index.js',
@@ -20,7 +19,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.[jt]s?$/,
+        test: /\.ts?$/,
         loader: 'esbuild-loader',
         options: {
           target: 'es2015',
